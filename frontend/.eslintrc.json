@@ -1,5 +1,5 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "extends": ["eslint:recommended", "prettier"],
   "env": {
     "commonjs": true,
@@ -8,13 +8,19 @@
     "browser": false
   },
   "parserOptions": {
-    "sourceType": "module"
+    "ecmaVersion": 8,
+    "requireConfigFile": false,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "impliedStrict": true,
+      "classes": true
+    }
   },
   "rules": {
-    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
     "no-console": 0,
     "quotes": ["error", "single"],
-    "semi": ["error", "always"]
+    "no-undef": 0
   }
 }
