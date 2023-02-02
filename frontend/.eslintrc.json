@@ -1,5 +1,20 @@
 {
-  "extends": [
-    "prettier" // Add "prettier" last. This will turn off eslint rules conflicting with prettier. This is not what will format our code.
-  ]
+  "parser": "babel-eslint",
+  "extends": ["eslint:recommended", "prettier"],
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "browser": false
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "linebreak-style": ["error", "unix"],
+    "no-console": 0,
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]
+  }
 }
