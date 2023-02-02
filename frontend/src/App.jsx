@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
 import Header from './components/Header/Header'
 import Category from './components/Category/Category'
@@ -14,6 +15,7 @@ function App() {
         <Route path="/category/:id" element={<Category />} />
         <Route path="/product/:id" element={<SingleProduct />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
