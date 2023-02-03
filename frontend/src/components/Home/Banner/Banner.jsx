@@ -1,3 +1,5 @@
+import React from 'react'
+
 import './Banner.scss'
 import BannerImg from '../../../assets/banner-img.png'
 
@@ -8,20 +10,15 @@ const Banner = () => {
         <div className="text-content">
           <h1>SALES</h1>
           <p>
-            Take te best of our headphones and more! Make your music be so real
-            than the galaxy. With the new collection, you can surf on the waves
-            of the pop and the fire of the rock.
+            Convallis interdum purus adipiscing dis parturient posuere ac a quam
+            a eleifend montes parturient posuere curae tempor
           </p>
-          <div className="cta">
+          <div className="ctas">
             <div className="banner-cta">Read More</div>
-            <div className="banner-cta v">Shop Now</div>
+            <div className="banner-cta v2">Shop Now</div>
           </div>
         </div>
-        <img
-          src={BannerImg}
-          alt="Banner image of headphone"
-          className="banner-img"
-        />
+        <img className="banner-img" src={BannerImg} />
       </div>
     </div>
   )
