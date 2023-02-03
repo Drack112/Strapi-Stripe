@@ -13,17 +13,18 @@ const Newsletter = () => {
     <div className="newsletter-section">
       <div className="newsletter-content">
         <span className="small-text">Newsletter</span>
-        <span className="big-text">
-          SignUp for the latest updates and offers
-        </span>
+        <span className="big-text">Sign up for latest updates and offers</span>
         <div className="form">
           <input type="text" placeholder="Email Address" />
           <button>Subscribe</button>
         </div>
-        <div className="text">
-          Will be used in accordance with out Privacy Policy
-        </div>
-        <div className="social-icons">
+        <span className="text">
+          Will be used in accordance with our Privacy Policy
+        </span>
+        <span className="social-icons">
+          <div className="icon">
+            <FaLinkedinIn size={14} />
+          </div>
           <div className="icon">
             <FaFacebookF size={14} />
           </div>
@@ -33,10 +34,7 @@ const Newsletter = () => {
           <div className="icon">
             <FaInstagram size={14} />
           </div>
-          <div className="icon">
-            <FaLinkedinIn size={14} />
-          </div>
-        </div>
+        </span>
       </div>
     </div>
   )
