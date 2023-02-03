@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 import './Header.scss'
 
 import { TbSearch } from 'react-icons/tb'
@@ -5,8 +7,17 @@ import { CgShoppingCart } from 'react-icons/cg'
 import { AiOutlineHeart } from 'react-icons/ai'
 
 const Header = () => {
+  const handleScroll = () => {
+    const offset = window.scrollY
+    console.log(offset)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <header class="main-header">
+    <header className="main-header">
       <div className="header-content">
         <ul className="left">
           <li>Home</li>
