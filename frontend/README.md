@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="https://reactjs.org/" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" width="200" alt="React Logo" /></a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licença">Licença</a>
+</p>
 
-## Available Scripts
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
+</p>
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+<a id="-tecnologias"></a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Tecnologias
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-### `npm test`
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![Strapi](https://img.shields.io/badge/strapi-%232E7EEA.svg?style=for-the-badge&logo=strapi&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<a id="-projeto"></a>
 
-### `npm run build`
+## 💻 Projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Um e-commerce de fones de ouvido simples usando o Strapi como principal CMS Headless, o frontend é construído em ReactJS  com Sass.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<a id="-como-executar"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Como executar
 
-### `npm run eject`
+### 💻 Pré-requisitos
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Você instalou a versão mais recente de `< NodeJS >`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Você tem uma máquina `< Windows / Linux / Mac >`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Você possui um `< Editor de código ou IDE / Gerenciador de banco de dados >`.
 
-## Learn More
+## ☕ Pequena ajuda
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Preencha o arquivo `.env.example` com as informações cobradas e depois renomeie para `.env`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```env
+REACT_APP_STRIPE_DEV_APP_KEY=
+REACT_APP_STRIPE_PROD_APP_KEY=
 
-### Code Splitting
+REACT_APP_STRIPE_APP_DEV_URL=http://localhost:1337
+REACT_APP_STRIPE_APP_PROD_URL=
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+REACT_APP_STRIPE_PUBLISHABLE_KEY=
+```
 
-### Analyzing the Bundle Size
+## Serviços necessários antes de rodar a aplicação:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Lembre-se de pegar as suas chaves de API nos serviços da **[Stripe](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwijlrD54oX3AhUvQUgAHQb7CAsYABAAGgJjZQ&ohost=www.google.com&cid=CAASJeRopwqWu91WWsvPhM4UKeVdBrRdLP22hWD2ajMnUqih0kZrdnc&sig=AOD64_0Ww0E5pwd2EtlWshd1Y1RIipL_mg&q&adurl&ved=2ahUKEwiutan54oX3AhUNjZUCHaMFAqsQ0Qx6BAgDEAE).**
 
-### Making a Progressive Web App
+## Configurando a aplicação antes de iniciar :gear:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Instale os requerimentos do package.json com seu gerenciador de pacotes a disposição
 
-### Advanced Configuration
+```bash
+pnmp install // yarn install // npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Se lembre de ter o Docker rodando :ocean:
 
-### Deployment
+E então, suba o backend da outra pasta com o comando `docker-compose up --build -V`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Agora você pode acessar [localhost:1337](localhost:1337) do seu navegador.
 
-### `npm run build` fails to minify
+Depois de ter configurado todo o Strapi, acesse o front através do link [localhost:3000](localhost:3000)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a id="licença"></a>
+
+## 📄 Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](../LICENSE.md) para mais detalhes.
+
+---
+
+#### _Sinta-se livre para colaborar, toda ajuda é bem vinda ;)_
