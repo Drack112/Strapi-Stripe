@@ -17,7 +17,11 @@ const Banner = () => {
             <div className="banner-cta v">Shop Now</div>
           </div>
         </div>
-        <img src={BannerImg} alt="Banner image of headphone" />
+        <img
+          src={BannerImg}
+          alt="Banner image of headphone"
+          className="banner-img"
+        />
       </div>
     </div>
   )
